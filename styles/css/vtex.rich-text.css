@@ -67,6 +67,27 @@
   font-weight: 700;
 }
 
+.container--middle {
+  margin: 0 auto;
+}
+
+.paragraph--middle {
+  margin: 0;
+  display: flex;
+}
+
+.container--greenBackground {
+  background: #61BA5F;
+  color: #ffffff;
+  max-height: 45px;
+}
+
+.container--redBackground {
+  background: #EF4340;
+  color: #ffffff;
+  max-height: 45px;
+}
+
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;

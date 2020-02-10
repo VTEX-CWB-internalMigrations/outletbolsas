@@ -7,36 +7,28 @@
   },
   "header-layout.desktop": {
     "children": [
-      "header-row#1-desktop",
       "header-row#2-desktop",
       "header-row#3-desktop",
-      "header-row#4-desktop"
+      "header-row#4-desktop",
+      "header-row#5-desktop"
     ]
   },
 
-  "header-row#1-desktop": {
-    "children": ["telemarketing"],
-    "props": {
-      "fullWidth": true
-    }
-  },
-
   "header-row#2-desktop": {
-    "children": ["notification.bar#home"],
-    "props": {
-      "fullWidth": "true"
+    "children": ["rich-text#home"],
+    "props":{
+      "blockClass": "background-yellow"
     }
   },
-  "notification.bar#home": {
+  "rich-text#home": {
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+      "text": "![imagem](https://freeitalia.ciaimg.com.br/Assets/Banner/7/TOPOLOLIE.jpg?v=8bae3ec4-1)",
+      "blockClass": "middle"
     }
   },
   "header-row#3-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#websites",
-      "header-spacer",
-      "vtex.menu@2.x:menu#institutional"
+      "vtex.menu@2.x:menu#websites"
     ],
     "props": {
       "blockClass": "menu-link",
@@ -45,28 +37,60 @@
   },
   "header-row#4-desktop": {
     "children": [
-      "logo#desktop",
-      "vtex.menu@2.x:menu#category-menu",
-      "header-spacer",
-      "header-spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "flex-layout.row#first"
     ],
     "props": {
       "sticky": true,
       "blockClass": "main-header"
     }
   },
+  "flex-layout.row#first": {
+    "children" :[
+      "flex-layout.col#second",
+      "flex-layout.col#third"
+    ]
+  },
+
+  "flex-layout.col#second" : {
+    "children":[
+      "logo#desktop"
+    ]
+  },
+
+  "flex-layout.col#third" : {
+    "children":[
+      "flex-layout.row#dealsMiniCart",
+      "flex-layout.row#fourth"
+    ]
+  },
+
+  "flex-layout.row#dealsMiniCart" :{
+    "children":[
+      "flex-layout.row#deals"
+    ]
+  },
+
+  "flex-layout.row#fourth": {
+    "children":[
+      "search-bar"
+    ]
+  },
+
   "logo#desktop": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "url": "https://www.outletbolsasdeluxo.com.br/assets/templates/7/imagens/logo.png",
       "width": "180"
     }
   },
+
+  "header-row#5-desktop": {
+    "children":[
+      "vtex.menu@2.x:menu#category-menu"
+    ]
+  },
+
   "header-layout.mobile": {
     "children": ["header-row#1-mobile"]
   },

@@ -16,3 +16,7 @@
   padding: 10px 0px;
   background-color: #F0F0F0;
 }
+
+.headerRowBackground--background-yellow {
+  background: #FAD563;
+}

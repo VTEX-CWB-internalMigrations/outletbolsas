@@ -1,16 +1,9 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "flex-layout.row#bannerNews",
+      "slider-layout#brands",
+      "flex-layout.row#shelfBanner"
     ]
   },
 
@@ -58,11 +51,11 @@
     }
   },
 
-  "rich-text#shelf-title": {
-    "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
-    }
+  "flex-layout.row#shelfBanner":{
+    "children":[
+      "list-context.image-list#demo",
+      "image#home"
+    ]
   },
   "flex-layout.row#shelf": {
     "children": ["list-context.product-list#demo1"]
@@ -87,31 +80,74 @@
     }
   },
 
-  "info-card#home": {
+  "image#home": {
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
+      "src": "https://freeitalia.ciaimg.com.br/Assets/Banner/7/summersale.jpg?v=99458872-1"
     }
   },
 
-  "rich-text#question": {
+  "flex-layout.row#bannerNews": {
+    "children":[
+      "flex-layout.col#bannerOne",
+      "flex-layout.col#bannerTwo",
+      "flex-layout.col#bannerThree",
+      "newsletter"
+    ]
+  },
+
+  "flex-layout.col#bannerOne":{
+    "children":[
+      "rich-text#betty"
+    ]
+  },
+
+  "flex-layout.col#bannerTwo":{
+    "children":[
+      "rich-text#snoopy"
+    ]
+  },
+
+  "flex-layout.col#bannerThree":{
+    "children":[
+      "rich-text#petitejolie"
+    ]
+  },
+
+  "rich-text#betty":{
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
+      "text": "![imagem](https://freeitalia.ciaimg.com.br/Assets/Banner/7/bpslim.jpg?v=3cb16439-1)"
     }
   },
 
-  "rich-text#link": {
+  "rich-text#snoopy":{
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "text": "![imagem](https://freeitalia.ciaimg.com.br/Assets/Banner/7/sn1.jpg?v=71f1ab40-1)"
+    }
+  },
+
+  "rich-text#petitejolie":{
+    "props": {
+      "text": "![imagem](https://freeitalia.ciaimg.com.br/Assets/Banner/7/pvoialslim.jpg?v=3bffe648-1)"
+    }
+  },
+
+  "slider-layout#brands":{
+    "children":[
+      "image#one",
+      "image#Two"
+    ]
+  },
+
+  "image#one": {
+    "props":{
+      "src": "https://freeitalia.ciaimg.com.br/Assets/Banner/7/disney.png?v=752b7a60-1"
+    }
+  },
+
+  "image#Two": {
+    "props":{
+      "src": "https://freeitalia.ciaimg.com.br/Assets/Banner/7/disney.png?v=752b7a60-1"
     }
   }
+
 }
