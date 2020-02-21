@@ -35,3 +35,7 @@
 .flexCol--switcherMobileCol {
   width: 20%;
 }
+
+.flexRow--newsBlock{
+  margin-top: 30px;
+}

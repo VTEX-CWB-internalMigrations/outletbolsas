@@ -2,15 +2,17 @@
   "store.home": {
     "blocks": [
       "flex-layout.row#bannerNews",
+      "flex-layout.row#shelfBanner",
       "slider-layout#brands",
-      "flex-layout.row#shelfBanner"
+      "shelf#home",
+      "shelf#home"
     ]
   },
-
   "shelf#home": {
-    "blocks": ["product-summary.shelf"]
+    "blocks": [
+      "product-summary.shelf"
+    ]
   },
-
   "product-summary.shelf": {
     "children": [
       "product-summary-name",
@@ -21,9 +23,10 @@
       "product-summary-buy-button"
     ]
   },
-
   "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+    "children": [
+      "slider-layout#demo-images"
+    ],
     "props": {
       "height": 720,
       "images": [
@@ -50,19 +53,32 @@
       "blockClass": "carousel"
     }
   },
-
-  "flex-layout.row#shelfBanner":{
-    "children":[
-      "list-context.image-list#demo",
+  "flex-layout.row#shelfBanner": {
+    "children": [
+      "flex-layout.col#mainSlider",
       "image#home"
     ]
   },
+  "flex-layout.col#mainSlider": {
+    "children": [
+      "list-context.image-list#demo"
+    ],
+    "props": {
+      "width": "70%"
+    }
+  },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": [
+      "list-context.product-list#demo1"
+    ]
   },
   "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
     }
@@ -79,75 +95,59 @@
       "blockClass": "shelf"
     }
   },
-
   "image#home": {
     "props": {
       "src": "https://freeitalia.ciaimg.com.br/Assets/Banner/7/summersale.jpg?v=99458872-1"
     }
   },
-
   "flex-layout.row#bannerNews": {
-    "children":[
-      "flex-layout.col#bannerOne",
-      "flex-layout.col#bannerTwo",
-      "flex-layout.col#bannerThree",
-      "newsletter"
-    ]
-  },
-
-  "flex-layout.col#bannerOne":{
-    "children":[
-      "rich-text#betty"
-    ]
-  },
-
-  "flex-layout.col#bannerTwo":{
-    "children":[
-      "rich-text#snoopy"
-    ]
-  },
-
-  "flex-layout.col#bannerThree":{
-    "children":[
-      "rich-text#petitejolie"
-    ]
-  },
-
-  "rich-text#betty":{
+    "children": [
+      "rich-text#betty",
+      "rich-text#snoopy",
+      "rich-text#petitejolie",
+      "flex-layout.col#space"
+    ],
     "props": {
-      "text": "![imagem](https://freeitalia.ciaimg.com.br/Assets/Banner/7/bpslim.jpg?v=3cb16439-1)"
+      "blockClass": "newsBlock"
     }
   },
-
-  "rich-text#snoopy":{
+  "flex-layout.col#space": {
     "props": {
-      "text": "![imagem](https://freeitalia.ciaimg.com.br/Assets/Banner/7/sn1.jpg?v=71f1ab40-1)"
+      "width": "30%"
     }
   },
-
-  "rich-text#petitejolie":{
+  "rich-text#betty": {
     "props": {
-      "text": "![imagem](https://freeitalia.ciaimg.com.br/Assets/Banner/7/pvoialslim.jpg?v=3bffe648-1)"
+      "text": "![imagem](https://freeitalia.ciaimg.com.br/Assets/Banner/7/bpslim.jpg?v=3cb16439-1)",
+      "blockClass": "newsImages"
     }
   },
-
-  "slider-layout#brands":{
-    "children":[
+  "rich-text#snoopy": {
+    "props": {
+      "text": "![imagem](https://freeitalia.ciaimg.com.br/Assets/Banner/7/sn1.jpg?v=71f1ab40-1)",
+      "blockClass": "newsImages"
+    }
+  },
+  "rich-text#petitejolie": {
+    "props": {
+      "text": "![imagem](https://freeitalia.ciaimg.com.br/Assets/Banner/7/pvoialslim.jpg?v=3bffe648-1)",
+      "blockClass": "newsImages"
+    }
+  },
+  "slider-layout#brands": {
+    "children": [
       "image#one",
       "image#Two"
     ]
   },
-
   "image#one": {
-    "props":{
+    "props": {
       "src": "https://freeitalia.ciaimg.com.br/Assets/Banner/7/disney.png?v=752b7a60-1"
     }
   },
-
   "image#Two": {
-    "props":{
+    "props": {
       "src": "https://freeitalia.ciaimg.com.br/Assets/Banner/7/disney.png?v=752b7a60-1"
     }
   }
-
 }

@@ -35,8 +35,8 @@
   },
   "header-row#3-desktop": {
     "children": [
-      "login",
-      "header-spacer"
+      "header-spacer",
+      "login"
     ],
     "props": {
       "blockClass": "menu-link",
