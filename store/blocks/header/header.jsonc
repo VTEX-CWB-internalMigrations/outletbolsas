@@ -1,22 +1,29 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "children": [
-      "header-row#2-desktop",
+      // "header-row#2-desktop",
       "header-row#3-desktop",
       "header-row#4-desktop",
       "header-row#5-desktop"
     ]
   },
-
   "header-row#2-desktop": {
-    "children": ["rich-text#home"],
-    "props":{
+    "children": [
+      "rich-text#home"
+    ],
+    "props": {
       "blockClass": "background-yellow"
     }
   },
@@ -28,7 +35,8 @@
   },
   "header-row#3-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#websites"
+      "login",
+      "header-spacer"
     ],
     "props": {
       "blockClass": "menu-link",
@@ -37,7 +45,11 @@
   },
   "header-row#4-desktop": {
     "children": [
-      "flex-layout.row#first"
+      "logo#desktop",
+      "header-spacer",
+      "flex-layout.row#first",
+      "search-bar",
+      "minicart.v2"
     ],
     "props": {
       "sticky": true,
@@ -45,37 +57,37 @@
     }
   },
   "flex-layout.row#first": {
-    "children" :[
-      "flex-layout.col#second",
-      "flex-layout.col#third"
+    "children": [
+      "image#frete",
+      "image#brinde",
+      "image#juros"
     ]
   },
-
-  "flex-layout.col#second" : {
-    "children":[
-      "logo#desktop"
+  "image#frete": {
+    "props": {
+      "src": ""
+    }
+  },
+  "image#brinde": {
+    "props": {
+      "src": ""
+    }
+  },
+  "image#juros": {
+    "props": {
+      "src": ""
+    }
+  },
+  "flex-layout.col#third": {
+    "children": [
+      "flex-layout.row#dealsMiniCart"
     ]
   },
-
-  "flex-layout.col#third" : {
-    "children":[
-      "flex-layout.row#dealsMiniCart",
-      "flex-layout.row#fourth"
-    ]
-  },
-
-  "flex-layout.row#dealsMiniCart" :{
-    "children":[
+  "flex-layout.row#dealsMiniCart": {
+    "children": [
       "flex-layout.row#deals"
     ]
   },
-
-  "flex-layout.row#fourth": {
-    "children":[
-      "search-bar"
-    ]
-  },
-
   "logo#desktop": {
     "props": {
       "title": "Logo",
@@ -84,15 +96,18 @@
       "width": "180"
     }
   },
-
   "header-row#5-desktop": {
-    "children":[
+    "children": [
       "vtex.menu@2.x:menu#category-menu"
-    ]
+    ],
+    "props": {
+      "blockClass": "menuBackground"
+    }
   },
-
   "header-layout.mobile": {
-    "children": ["header-row#1-mobile"]
+    "children": [
+      "header-row#1-mobile"
+    ]
   },
   "header-row#1-mobile": {
     "children": [
@@ -108,9 +123,10 @@
     }
   },
   "drawer": {
-    "children": ["menu#drawer"]
+    "children": [
+      "menu#drawer"
+    ]
   },
-
   "menu#drawer": {
     "children": [
       "menu-item#category-apparel",
@@ -121,7 +137,6 @@
       "orientation": "vertical"
     }
   },
-
   "logo#mobile": {
     "props": {
       "title": "Logo",

@@ -1,10 +1,12 @@
 {
   "vtex.menu@2.x:menu#category-menu": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
-    ]
+      "menu-item#category-apparel"
+    ],
+    "props": {
+      "inverted": "true",
+      "blockClass": "menuOutlet"
+    }
   },
   "menu-item#category-apparel": {
     "props": {
@@ -20,27 +22,19 @@
         "text": "Apparel & Accessories"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
-    ]
+    "blocks": []
   },
   "vtex.menu@2.x:submenu#category-apparel": {
     "props": {
       "width": "auto"
     },
-    "children": [
-      "vtex.menu@2.x:menu#category-apparel"
-    ]
+    "children": []
   },
   "vtex.menu@2.x:menu#category-apparel": {
     "props": {
       "orientation": "vertical"
     },
-    "children": [
-      "menu-item#category-apparel-clothing",
-      "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
-    ]
+    "children": []
   },
   "menu-item#category-apparel-clothing": {
     "props": {
@@ -138,7 +132,6 @@
       "vtex.menu@2.x:menu#more"
     ]
   },
-
   "vtex.menu@2.x:menu#more": {
     "props": {
       "orientation": "vertical"

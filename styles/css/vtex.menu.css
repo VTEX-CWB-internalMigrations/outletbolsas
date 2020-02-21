@@ -1,0 +1,7 @@
+.menuContainerNav--menuOutlet{
+    background: #000;
+}
+
+.menuContainerNav--menuOutlet .styledLink{
+    color: #fff;
+}

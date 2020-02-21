@@ -1,25 +1,19 @@
 {
   "vtex.menu@2.x:menu#websites": {
-    "children": [
-      "login",
-      "flex-layout.row#contatos"
-    ]
+    "children": []
   },
-
   "flex-layout.row#contatos": {
-    "children":[
+    "children": [
       "rich-text#telefone",
       "rich-text#whatsapp"
     ]
   },
-
   "rich-text#telefone": {
     "props": {
       "text": "![telefone loja](https://outletbolsas.vteximg.com.br/arquivos/phone.svg) 41 3076-1663",
       "blockClass": "redBackground"
     }
   },
-
   "rich-text#whatsapp": {
     "props": {
       "text": "![whatsapp loja](https://outletbolsas.vteximg.com.br/arquivos/whatsapp.svg) 41 99993-0636",
