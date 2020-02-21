@@ -47,7 +47,7 @@
     "children": [
       "logo#desktop",
       "header-spacer",
-      "flex-layout.row#first",
+      "flex-layout.row#imagesPromo",
       "search-bar",
       "minicart.v2"
     ],
@@ -56,24 +56,24 @@
       "blockClass": "main-header"
     }
   },
-  "flex-layout.row#first": {
+  "flex-layout.row#imagesPromo": {
     "children": [
-      "image#frete",
-      "image#brinde",
-      "image#juros"
+      "image#fretePromo",
+      "image#brindePromo",
+      "image#jurosPromo"
     ]
   },
-  "image#frete": {
+  "image#fretePromo": {
     "props": {
       "src": ""
     }
   },
-  "image#brinde": {
+  "image#brindePromo": {
     "props": {
       "src": ""
     }
   },
-  "image#juros": {
+  "image#jurosPromo": {
     "props": {
       "src": ""
     }

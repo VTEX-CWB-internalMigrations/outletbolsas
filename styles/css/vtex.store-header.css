@@ -7,6 +7,10 @@
   background: #000;
 }
 
+.headerRowBackground--menu-link{
+  height: 25px;
+}
+
 .headerRow--main-header :global(.vtex-menu-2-x-styledLink)  {
   color: #727273;
   font-size: 14px;
