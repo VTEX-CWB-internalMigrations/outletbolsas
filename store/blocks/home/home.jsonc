@@ -5,7 +5,8 @@
       "flex-layout.row#shelfBanner",
       "slider-layout#brands",
       "shelf#home",
-      "shelf#home"
+      "shelf#home",
+      "flex-layout.row#bottomImages"
     ]
   },
   "shelf#home": {
@@ -148,6 +149,28 @@
   "image#Two": {
     "props": {
       "src": "https://freeitalia.ciaimg.com.br/Assets/Banner/7/disney.png?v=752b7a60-1"
+    }
+  },
+  "flex-layout.row#bottomImages": {
+    "children": [
+      "image#promoOne",
+      "image#promoTwo",
+      "image#promoThree"
+    ]
+  },
+  "image#promoOne": {
+    "props": {
+      "src": ""
+    }
+  },
+  "image#promoTwo": {
+    "props": {
+      "src": ""
+    }
+  },
+  "image#promoThree": {
+    "props": {
+      "src": ""
     }
   }
 }
