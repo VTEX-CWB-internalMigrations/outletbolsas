@@ -5,3 +5,7 @@
 .menuContainerNav--menuOutlet .styledLink{
     color: #fff;
 }
+
+.menuContainer--whiteMenu .styledLink{
+    color: #fff
+}

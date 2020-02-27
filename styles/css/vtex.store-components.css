@@ -17,15 +17,6 @@
   padding: 0px;
 }
 
-.newsletter {
-  background-color: #03054E;
-  max-width: 1528px;
-  margin: 0 auto;
-}
-
-.newsletter .container {
-  padding: 60px 10px;
-}
 
 .label {
   color: #fff;
@@ -73,10 +64,22 @@
   width: auto;
 }
 
+.newsletter .form{
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter .container{
+  padding: 0px;
+}
+
+.newsletter .label{
+  font-size: 20px;
+  text-align: left;
+}
+
+
 @media only screen and (min-width: 640px) {
-  .newsletter .container {
-    padding: 140px;
-  }
 
   .logoImage{
     width: 250px;
