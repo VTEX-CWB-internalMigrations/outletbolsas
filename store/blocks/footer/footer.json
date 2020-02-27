@@ -15,7 +15,7 @@
   "flex-layout.row#footer-1-desktop": {
     "children": [
       "footer-spacer",
-      "vtex.menu@2.x:menu#Products",
+      "flex-layout.col#footerOne",
       "rich-text#footerPlace",
       "newsletter",
       "footer-spacer"
@@ -29,6 +29,18 @@
   "newsletter": {
     "props": {
       "label": "Newsletter"
+    }
+  },
+  "flex-layout.col#footerOne": {
+    "children": [
+      "rich-text#institutionalTitle",
+      "vtex.menu@2.x:menu#Products"
+    ]
+  },
+  "rich-text#institutionalTitle": {
+    "props": {
+      "text": "INSTITUCIONAL",
+      "blockClass": "footerTitle"
     }
   },
   "rich-text#footerPlace": {
