@@ -35,7 +35,10 @@
     "children": [
       "rich-text#institutionalTitle",
       "vtex.menu@2.x:menu#Products"
-    ]
+    ],
+    "props": {
+      "blockClass": "footerOne"
+    }
   },
   "rich-text#institutionalTitle": {
     "props": {

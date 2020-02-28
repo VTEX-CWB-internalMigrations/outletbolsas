@@ -7,5 +7,10 @@
 }
 
 .menuContainer--whiteMenu .styledLink{
-    color: #fff
+    color: #fff;
+    font-size: 15px;
+}
+
+.styledLinkContainer--whiteMenu{
+    margin: 0px;
 }

@@ -42,4 +42,9 @@
 
 .flexRow--footerFirst{
   background-color: #000;
+  margin-top: 45px;
+}
+
+.flexColChild--footerOne{
+  height: auto !important;
 }
